@@ -18,6 +18,7 @@ bool isAscending(int a[100], int n)
 	for (int i = 0; i < n - 1; i++) {
 		if (a[i] == a[i + 1]) ++count;
 	}
+	// C2: if (a[0] == a[n -1] return false; vì TH mảng toàn các số giống nhau nằm trong TH này)
 	if (count == n - 1) return false;
 	for (int i = 0; i < n - 1; i++)
 	{
